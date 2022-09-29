@@ -1,8 +1,16 @@
-// Code your solutions in this file
-for (let countdown = 10; countdown > 0; countdown++) {
-    console.log(countdown)
+function writeCards(names, event){
+	const messages = []
+
+	for (let i=0; i < names.length; i++) {
+		const message = `Thank you, ${names[i]}, for the wonderful ${event} gift!`;
+		messages.push(message);
+	}
+
+	return messages;
 }
-let countdown = 10;
-while (countdown > 0) {
-    console.log(countdown++);
+
+function countDown(number){
+	for (let i = number; i >= 0; i--){
+		console.log(i);
+	}
 }
